@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bai 2</title>
+   <title>Bai 2</title>
 </head>
 <body>
-    <h1>Bai 2</h1>
-    <!-- <table></table> Định nghĩa bảng
-    <tr></tr> ĐỊnh nghĩa hàng
-    <td></td> định nghĩa cột
-    <th></th> Định nghĩa đề mục trong bảng(in đậm, căn lề giữa)
-    <caption></caption> Định nghĩa tiêu đề của bảng -->
+   <h1>Bai 2</h1>
+   <!-- <table></table> Định nghĩa bảng
+   <tr></tr> ĐỊnh nghĩa hàng
+   <td></td> định nghĩa cột
+   <th></th> Định nghĩa đề mục trong bảng(in đậm, căn lề giữa)
+   <caption></caption> Định nghĩa tiêu đề của bảng -->
 
-    <table border="">
-        <caption>Bảng 1:Bảng thông tin sinh viên</caption>
-        <!-- Hàng 1 -->
+   <table border="1">
+      <caption>Bảng 1:Bảng thông tin sinh viên</caption>
+      <!-- Hàng 1 -->
          <tr>
             <th>STT</th>
-            <th>Họ và tên</th>
+            <th>Họ</th>
+            <th>Tên</th>
             <th>Mã Sinh Viên</th>
             <th> lớp</th>
          </tr>
          <!-- Hàng 2 -->
          <tr>
             <td>1</td>
-            <td>Đỗ Trung Kiên</td>
+            <td>Đỗ Trung </td>
+            <td>Kiên</td>
             <td>2320150014</td>
-            <td>DCCTCT68B</td>
+            <td rowspan="2">DCCTCT68B</td>
          </tr>
+
          <!-- Hàng 3 -->
          <tr>
             <td>2</td>
-            <td>Đào Quang Lộc</td>
+            <td>Đào Quang </td>
+            <td>Lộc</td>
             <td>2321050000</td>
+         </tr>
+
+         <tr>
+            <td>3</td>
+            <td>Nguyễn Văn</td>
+            <td>Mạnh</td>
+            <td>2321050002</td>
             <td>DCCTCT68A</td>
          </tr>
 
-
-    </table>
-
+   </table>
+         <!-- Danh sách -->
+         <!-- Có thứ tự -->
+      <p>Công việc buổi sáng</p>
+         <ol>
+            <li>Ngủ dậy</li>
+            <li>Đánh răng</li>
+            <li>Ăn sáng</li>
+            <li>Đi Học</li>
+         </ol>
+         <!-- Không có thứ tự -->
+         Các ngông ngữ lập trình
+         <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Dart</li>
+            <li>C#</li>
+         </ul>
 </body>
 </html>
