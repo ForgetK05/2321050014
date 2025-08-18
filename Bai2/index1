@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<table border="1">
+    <caption> Bảng CV </caption>
+    <tr>
+        <th rowspan="3">
+            <img  width="150" src="https://i.pinimg.com/736x/51/7f/ad/517fad9f96becdde64d82ced78b04ddd.jpg"/>
+            <p>Đỗ Trung Kiên</p>
+            
+        </th>
+
+
+        <th> Thông Tin Cá Nhân 
+            <div>
+                <h5> <p>Email: kiendt18102005@gmail.com</p>
+                    <br>
+                    <p>Điện thoại: 0913651583</p>
+                    <br>
+                    Địa chỉ: Đông Anh, Hà Nội
+
+                </h5>
+            </div>
+        </th>
+        <th> Mục tiêu nghề nghiệp</th>
+    </tr>
+
+    <tr>
+        <td > Học Vấn 
+            <br>
+            <h5>Năm 3- Trường Đại Học Mỏ địa chất</h5>
+        </td>
+        <td> Kỹ năng
+            <br>
+            <ul>
+                <p>Lập trình</p>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2">Sở thích
+            <br>
+            <p>Xem phim, </p>
+        </th>
+    </tr>
+    <tr>
+        <th colspan="3"> 
+            <h4>Kinh nghiệm làm việc
+                <br>
+            </h4>
+            <h5>
+            <br>
+            <p>Thực tập ở VN_Tech</p>
+            </h5>
+
+        </th>
+    </tr>
+    <tr>
+        <th colspan="3"> Dự án tiêu biểu
+
+
+        </th>
+    </tr>
+    <tr>
+        <th colspan="3">CV được tạo bởi <font color = "red"> Đỗ Trung Kiên</font> </th>
+    </tr>
+</table>
+</head>
+
+</html>
