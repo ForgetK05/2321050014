@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 3</title>
 </head>
 <body>
-    
+    <h1>FORM điền thông tin</h1>
+    <form>
+        <div>
+            <p><b>Họ và tên:</b></p>
+            <input type="" name="Hovaten" placeholder="Điền họ và tên">
+            <!-- placeholder: mô tả thông tin 
+            -->
+        </div>
+        <!--  -->
+        <div>
+            <p><b>Mã số sinh viên:</b></p>
+            <input type="" name="Mã số sinh viên" placeholder="mã số sinh viên" value="" readonly>
+        </div>
+        <!--  -->
+        <div>
+            <p><b>Giởi thiệu bản thân:</b></p>
+            <textarea name="gioithieu" id="">Nhập vào giới thiệu:</textarea>
+        </div>
+        <!--  -->
+        <br>
+        <div>
+            <p><b>Email:</b></p>
+            <input type="email" name="email" placeholder="ghi email">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+        <div>
+            <p><b>Số điện thoại:</b></p>
+            <input name="số điện thoại" type="tel" placeholder="Dạng số" required
+            pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))">
+        </div>
+        <!-- Số đầu tiên luôn bắt đầu = 0 
+                số thứ 2: 3,4,8,9
+                số cuối : 0->9-->
+        <br>
+        <div>
+            <p><b>Số điện thoại:</b></p>
+            <input name="số điện thoại" type="tel" placeholder="Dạng số" required
+            pattern="([0]{1}([3,4,8,9]{1})([0-9]{8}))">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
 </body>
 </html>
