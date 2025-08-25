@@ -26,8 +26,31 @@
             color: red;
             background-color: darkgreen;
         }
+
+        .box1 {
+            background-color: #f55a5a;
+        }
+
+        .box2 {
+            background-color: #ff84dc;
+            /*1 giá trị xung quanh
+            2 giá trị (trên dưới) (trái phải)
+            4 giá trị từ trên -> phải -> dưới -> trái
+
+            */
+            /*margin: 50px 100px /* trên dưới 50px & trái phải 100*/
+            width: 50%;
+            margin: 50px auto;
+            padding: 100px;
+        }
+
+        .box3 {
+            background-color: #6db5db;
+        }
     </style>
     <link rel="stylesheet" href="style.css">
+    <!--  -->
+
 </head>
 
 <body>
@@ -41,6 +64,10 @@
     <h1 class="title2">Ví dụ về class</h1>
     <!--  -->
     <h2>Ví dụ về độ ưu tiên</h2>
+    <!--  -->
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
 </body>
 
 </html>
