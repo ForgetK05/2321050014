@@ -45,10 +45,12 @@ li {
 }
 
 .news {
-    display: flex;
-    justify-content: center;
-    font-family: Roboto, Arial, Tahoma;
-    margin: 10px 160px;
+    border-bottom: 3px solid #0f75bc;
+    color: #024da1;
+    font-size: 25px;
+    line-height: 52px;
+    padding: 5px 0 15px;
+    text-transform: uppercase;
 }
 
 .news_window {
