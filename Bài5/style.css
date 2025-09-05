@@ -3,8 +3,7 @@ body {
 }
 
 header {
-    justify-items: center;
-    display: block;
+    border-bottom: 10px solid #f1f1f2;
 }
 
 nav {
@@ -31,15 +30,35 @@ li {
     color: #ffffff;
     text-decoration: none;
     font-family: Roboto, Arial, Tahoma;
-    ;
+
 }
 
 .banner-qc {
     display: flex;
     justify-content: center;
+    margin: 10px 0px;
 }
 
 .qc {
     display: flex;
     justify-content: space-between;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, Tahoma;
+    margin: 10px 160px;
+}
+
+.news_window {
+    display: flex;
+    border-right: 1px solid gray;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.size_anh {
+    width: 1px;
+    height: 1px;
 }
