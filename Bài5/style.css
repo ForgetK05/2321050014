@@ -1,23 +1,25 @@
-body{
+body {
     margin: 0px;
 }
 
-header{
+header {
     justify-items: center;
     display: block;
 }
-nav{
+
+nav {
     background-color: #0c4ca3;
     padding: 5px;
 }
 
-ul{
-    display: flex ;
+ul {
+    display: flex;
     justify-items: center;
     list-style: none;
     gap: 20px;
 }
-li{
+
+li {
     padding: 15px;
 }
 
@@ -25,17 +27,19 @@ li{
     border-right: 1px solid gray;
 }
 
-.danhmuc-lienket{
+.danhmuc-lienket {
     color: #ffffff;
     text-decoration: none;
-    font-family: Roboto, Arial, Tahoma;;
+    font-family: Roboto, Arial, Tahoma;
+    ;
 }
 
-.banner-qc{
+.banner-qc {
     display: flex;
     justify-content: center;
 }
-.qc{
+
+.qc {
     display: flex;
     justify-content: space-between;
 }
