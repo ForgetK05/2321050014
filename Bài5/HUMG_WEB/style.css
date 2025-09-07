@@ -94,6 +94,7 @@ body {
     /* Hoặc display: grid */
     justify-content: center;
     /* Căn giữa thẻ bao bọc theo chiều ngang */
+    background: fixed;
 }
 
 .main-wrapper {
