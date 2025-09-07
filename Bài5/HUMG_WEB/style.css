@@ -89,6 +89,13 @@ li {
     margin: 10px;
 }
 
+#bottom,
+#bottom1,
+#bottom2,
+#bottom3 #bottom4 {
+    border-bottom: 10px solid rgb(26, 142, 250);
+}
+
 body {
     display: flex;
     /* Hoặc display: grid */
