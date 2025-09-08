@@ -87,6 +87,7 @@ li {
     color: #1b66d8;
     font-size: 25px;
     margin: 10px;
+    border-bottom: #125bc0;
 }
 
 #bottom,
@@ -97,19 +98,13 @@ li {
 }
 
 body {
-    display: flex;
     /* Hoặc display: grid */
     justify-content: center;
     /* Căn giữa thẻ bao bọc theo chiều ngang */
     background: fixed;
 }
 
-.main-wrapper {
-    width: 100%;
-    /* Chiếm toàn bộ chiều rộng của body */
-    max-width: 1900px;
-    /* Giới hạn chiều rộng tối đa */
-}
+
 
 .footer {
     background-color: #125bc0;
@@ -122,7 +117,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-image: linear-gradient(183456deg, #2a4b7a, #888686);
+    background-image: linear-gradient(183456deg, #2a4b7a, #8598ed);
 }
 
 .partner {
