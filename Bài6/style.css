@@ -1,0 +1,47 @@
+.top {
+    display: flex;
+    justify-self: center;
+    gap: 100px;
+    color: gray;
+}
+
+header {
+    background-color: rgb(43, 43, 43);
+}
+
+.footer {
+    background-color: rgb(43, 43, 43);
+}
+
+.search {
+    display: flex;
+    border: 10px solid rgb(173, 173, 174);
+    gap: 100px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1 {
+    background-color: rgb(96, 100, 100);
+    padding: 50%;
+}
+
+.c2 {
+    background-color: rgb(68, 69, 69);
+    padding: 50%;
+}
+
+.c3 {
+    background-color: rgb(96, 100, 100);
+    padding: 50%;
+}
+
+.c {
+    display: flex;
+    justify-content: space-between;
+    width: 637px;
+    height: 900px;
+}
