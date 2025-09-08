@@ -83,7 +83,7 @@ li {
     border: 2px solid gray;
 }
 
-.a .tin-tuc {
+.tin-tuc a {
     color: #1b66d8;
     font-size: 25px;
     margin: 10px;
