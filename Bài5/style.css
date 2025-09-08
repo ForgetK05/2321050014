@@ -363,7 +363,6 @@ h2 {
 
 .top {
     border-bottom: 2px solid #fff;
-    overflow: auto;
     padding-bottom: 0px;
     display: flex;
 }
