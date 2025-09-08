@@ -15,7 +15,7 @@ header {
 
 .search {
     display: flex;
-    border: 10px solid rgb(173, 173, 174);
+    border-radius: 10px rgb(173, 173, 174);
     gap: 100px;
 }
 
