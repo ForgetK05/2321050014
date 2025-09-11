@@ -1,5 +1,5 @@
 body {
-    padding: 110px;
+    padding: 0px;
     width: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -89,10 +89,15 @@ footer {
 }
 
 .m {
-    flex: 3;
+    flex: 2.4;
     background-image: linear-gradient(180deg, #b9b9b9, #000);
     color: #c9c6c6;
-    padding: 5px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 .m2,
@@ -129,6 +134,49 @@ footer {
     border: none;
 }
 
+.m4 h2,
+.m4 h4 {
+    margin: 0px;
+}
+
+.m5 {
+    display: flex;
+    border-radius: 8px;
+    margin: 4px;
+    padding: 5px;
+}
+
+.m5 button {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px 80px 80px 20px;
+    background-image: linear-gradient(180deg, #96a6d1, #7a7a7a);
+    margin: 4px;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+}
+
+.m7 {
+
+    display: flex;
+    border-radius: 8px;
+    margin: 4px;
+    padding: 5px;
+
+}
+
+.m7 button {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px 80px 80px 20px;
+    background-image: linear-gradient(180deg, #898c94, #7a7a7a);
+    margin: 4px;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+}
+
 .m2 button:hover,
 .m3 button:hover {
     background: #333;
@@ -142,7 +190,6 @@ footer {
 
 .left-side {
     flex: 0.8;
-    /* sidebar trái nhỏ hơn */
     background: #181818;
     color: #b3b3b3;
     padding: 24px 12px;
@@ -158,7 +205,18 @@ footer {
     margin: 0;
     max-height: 400px;
     overflow-y: auto;
+    scrollbar-width: none;
 }
+
+.ronaldo {
+    padding: 30px;
+}
+
+.left-side img {
+    border-radius: 12px;
+
+}
+
 
 .left-side .ds {
     padding: 10px;
@@ -183,6 +241,8 @@ footer {
     background: #333;
 }
 
+
+
 .right-side {
     flex: 1;
     background: #181818;
@@ -192,6 +252,45 @@ footer {
     max-width: 260px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.right-side img,
+.right-side iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.iframe ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+
+}
+
+
+.r1 h2 {
+    margin: 4px;
+}
+
+.r2 {
+    margin: 8px;
+}
+
+.r2 a:hover {
+    color: white;
+    background-color: #181818;
+    margin: 4px;
+    cursor: pointer;
+}
+
+a {
+    color: #b3b3b3;
 }
 
 .f {
@@ -216,5 +315,4 @@ footer {
     border: none;
     padding: 4px;
     cursor: pointer;
-    flex: 6;
 }
