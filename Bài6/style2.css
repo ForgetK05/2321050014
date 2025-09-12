@@ -1,11 +1,15 @@
 body {
-    padding: 0px;
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
+    /* padding: 0px; */
+    /* width: 100%; */
+    margin: 0;
+    background-color: black;
 }
 
-header,
+header {
+    width: 100%;
+    height: 15vh;
+}
+
 .top {
     width: 100%;
     background: #000000;
@@ -13,19 +17,11 @@ header,
     justify-content: space-between;
     align-items: center;
     padding: 0 32px;
-    height: 70px;
+    /* height: 70px; */
     box-sizing: border-box;
     border-bottom: 1px solid #474141;
     flex: 1;
 }
-
-footer {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 174px;
-}
-
-
 
 .top-left,
 .top-center,
@@ -72,11 +68,11 @@ footer {
     cursor: pointer;
 }
 
-.container {
+main {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(9, 9, 9);
     display: flex;
-    background-image: linear-gradient(180deg, #555050, #463838);
-    height: 680px;
-    justify-content: space-between;
 }
 
 .left-side,
@@ -88,16 +84,67 @@ footer {
     padding: 5px;
 }
 
+.left-side {
+    width: 20%;
+    overflow-y: scroll;
+}
+
+.left-side {
+    flex: 0.8;
+    background: #181818;
+    color: #b3b3b3;
+    padding: 24px 12px;
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    width: 20%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.left-side ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    /* max-height: 400px; */
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.left-side .ds {
+    padding: 10px;
+    background-color: #4e4e4e;
+    border-radius: 10px;
+}
+
+.left-side li button {
+    border-radius: 8px;
+    padding: 12px;
+    background: #282828;
+    margin: 6px 0;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.left-side li button:hover {
+    background: #333;
+}
+
 .m {
     flex: 2.4;
-    background-image: linear-gradient(180deg, #b9b9b9, #000);
+    background-image: linear-gradient(180deg, #32623f, #000);
     color: #c9c6c6;
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    overflow: auto;
+    overflow-y: scroll;
     scrollbar-width: none;
+    width: 60%;
 }
 
 .m2,
@@ -127,7 +174,7 @@ footer {
     flex: 1;
     border-radius: 10px;
     padding: 20px;
-    background-image: linear-gradient(180deg, #333a2d, #7a7a7a);
+    background-image: linear-gradient(180deg, #2e312f, #7a7a7a);
     margin: 4px;
     color: aliceblue;
     cursor: pointer;
@@ -182,66 +229,6 @@ footer {
     background: #333;
 }
 
-.left-side,
-.right-side {
-    background-color: rgb(46, 46, 46);
-    color: #c9c6c6;
-}
-
-.left-side {
-    flex: 0.8;
-    background: #181818;
-    color: #b3b3b3;
-    padding: 24px 12px;
-    min-width: 220px;
-    max-width: 260px;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-side ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
-    scrollbar-width: none;
-}
-
-.ronaldo {
-    padding: 30px;
-}
-
-.left-side img {
-    border-radius: 12px;
-
-}
-
-
-.left-side .ds {
-    padding: 10px;
-    background-color: #4e4e4e;
-    border-radius: 10px;
-}
-
-.left-side li button {
-    border-radius: 8px;
-    padding: 12px;
-    background: #282828;
-    margin: 6px 0;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    text-align: left;
-    font-size: 16px;
-}
-
-.left-side li button:hover {
-    background: #333;
-}
-
-
 
 .right-side {
     flex: 1;
@@ -250,9 +237,8 @@ footer {
     padding: 24px 12px;
     min-width: 220px;
     max-width: 260px;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
+    width: 20%;
+    overflow-y: scroll;
     scrollbar-width: none;
 }
 
@@ -269,10 +255,16 @@ footer {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
 
+.iframe {
+    width: 100%;
 
 }
 
+iframe {
+    width: 100%;
+}
 
 .r1 h2 {
     margin: 4px;
@@ -293,21 +285,39 @@ a {
     color: #b3b3b3;
 }
 
+footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+
 .f {
-    background-color: rgb(0, 0, 0);
     color: aliceblue;
     display: flex;
-    padding-top: 55px;
+    padding-top: 45px;
+    position: fixed;
+    display: flex;
 }
 
 .f1,
 .f2,
 .f3 {
-    flex: 1;
+    display: flex;
     border-radius: 8px;
     padding: 5px;
-    justify-content: space-between;
-    padding-left: 260px;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.f1,
+.f3 {
+    flex: 1;
+}
+
+.f2 {
+    flex: 2;
+    width: 60%;
 }
 
 .f21 {
