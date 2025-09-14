@@ -67,9 +67,20 @@ main .pbt div {
     padding-bottom: 10px;
 }
 
-main .pbt1 div {
+main .f ul {
+    padding: 5px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.f .f0 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+main .pbt1 div {
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 12px;
 }
 
