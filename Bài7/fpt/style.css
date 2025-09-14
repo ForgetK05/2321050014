@@ -1,13 +1,15 @@
 body {
-    background-color: grey;
+    background-color: rgb(34, 34, 34);
     margin: 0;
     color: white;
+    padding: 200px;
 }
 
 header {
     background-color: black;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
+    position: fixed;
 }
 
 .container {
@@ -23,6 +25,22 @@ ul {
     margin: 0;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+nav ul li img {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
 li {
     margin-right: 20px;
 }
@@ -32,10 +50,43 @@ a {
     text-decoration: none;
 }
 
+.m {
+    overflow-y: scroll;
+}
 
 main {
+    padding-top: 138.594px;
     width: 70%;
-    background-color: black;
-    height: 1000px;
+    background-color: rgb(34, 34, 34);
+    height: auto;
     margin: auto;
+    box-sizing: border-box;
+}
+
+main .pbt div {
+    padding-bottom: 10px;
+}
+
+main .pbt1 div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+
+}
+
+footer {
+    height: 15vh;
+    background-color: rgb(150, 153, 156);
+    width: 70%;
+    margin: auto;
+    padding: 24px 0;
+    box-sizing: border-box;
 }
