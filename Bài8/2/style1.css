@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    padding: 100px;
+    justify-self: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 24px;
+}
+
+.m-color {
+    background-color: rgb(177, 177, 177);
+    border-radius: 24px;
+    width: 100%;
+}
+
+
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 40%;
+}
