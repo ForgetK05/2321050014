@@ -2,7 +2,7 @@ body {
     background-color: rgb(34, 34, 34);
     margin: 0;
     color: white;
-    padding: 200px;
+    padding: 0px;
 }
 
 header {
@@ -15,9 +15,41 @@ header {
 .container {
     width: 70%;
     margin: auto;
+    justify-content: space-between;
+    display: flex;
 }
 
-ul {
+.chucnang {
+    padding-left: 80px;
+}
+
+.chucnang ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.chucnang ul li {
+    padding: 5px;
+    border: 8px solid transparent;
+    border-radius: 12px;
+}
+
+.chucnang ul li:hover {
+    cursor: pointer;
+    border-color: orange;
+    /* Khi hover, viền chuyển sang màu cam */
+}
+
+.l1 {
+    background-color: #f8b931;
+}
+
+li main ul {
     display: flex;
     list-style: none;
     /* gap: 20px; */
@@ -32,7 +64,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 24px;
+    gap: 15px;
 }
 
 nav ul li img {
@@ -71,12 +103,24 @@ main .f ul {
     padding: 5px;
     overflow-x: scroll;
     scrollbar-width: none;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .f .f0 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.f0 ul li:hover {
+    background-color: rgb(90, 90, 90);
+    border-radius: 12px;
+}
+
+.f0 ul li p {
+    justify-self: center;
+}
+
 
 main .pbt1 div {
     padding-top: 15px;
@@ -95,9 +139,44 @@ main img {
 
 footer {
     height: 15vh;
-    background-color: rgb(150, 153, 156);
+    background-color: rgb(34, 34, 34);
     width: 70%;
     margin: auto;
     padding: 24px 0;
     box-sizing: border-box;
+}
+
+footer .footer-main {
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col h4 {
+    color: #f8d78f;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer-social img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 24px;
+    padding: 16px 0;
+    color: #ccc;
+    font-size: 13px;
+    text-align: left;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
