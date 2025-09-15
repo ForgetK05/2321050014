@@ -19,6 +19,7 @@ header {
     margin: auto;
     justify-content: space-between;
     display: flex;
+    font-size: 10;
 }
 
 .chucnang {
@@ -51,7 +52,7 @@ header {
     background-color: #f8b931;
 }
 
-li main ul {
+main ul {
     display: flex;
     list-style: none;
     /* gap: 20px; */
