@@ -100,11 +100,13 @@ main .pbt div {
 }
 
 main .f ul {
+    display: flex;
     padding: 5px;
     overflow-x: scroll;
     scrollbar-width: none;
     box-sizing: border-box;
     justify-content: center;
+    list-style: none;
 }
 
 .f .f0 {
