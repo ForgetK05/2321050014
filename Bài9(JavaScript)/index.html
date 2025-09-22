@@ -61,8 +61,43 @@
             lop: "khoa học máy tính k68"
         }
 
-        document.writeln("Bounjor " + inforSV.hoTen + " " + inforSV.lop)
+        let addressKien = {
+            city: "HaNoi",
+            quanHuyen: "DongAnh",
+            duong: 72
+        }
 
+
+        inforSV.address = addressKien;
+
+        let namsinh = "sinh nam" + " " + 2005;
+
+        inforSV.year = namsinh;
+
+
+        //let inforSV = {
+        //  hoTen: "Đỗ Trung Kiên",
+        //tuoi: 20,
+        //    gioitinh: true,
+        //    lop: "khoa học máy tính k68",
+        //    address: {
+        //       city: "HaNoi",
+        //      quanHuyen: "DongAnh",
+        //     duong: 72
+        //}
+        //}
+        document.writeln("Bounjor "
+            + inforSV.hoTen
+            + " "
+            + inforSV.lop + " "
+            + inforSV.address.duong + " "
+            + inforSV.address.city
+            + " "
+            + inforSV.year)
+
+        document.writeln(parseInt(num22))
+
+        document.writeln(typeof (num22))
     </script>
 </body>
 
