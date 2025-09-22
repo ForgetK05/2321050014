@@ -28,4 +28,6 @@ body {
     border-radius: 12px;
 }
 
-.right {}
+.right {
+    border: 6px;
+}
