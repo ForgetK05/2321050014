@@ -56,9 +56,53 @@
         //String
         let hoTen = "Do Trung Kien";
         document.writeln("<br>" + hoTen.length);
-        var myString = "Hello"
+        var myString = "Hello Kien"
         document.writeln("<br>" + myString[0]);
         //
+        document.writeln("<br>" + myString.slice(1, 4));
+        //
+        document.writeln("<br>" + myString.replace("Hello", "Hi"));
+        //
+        document.writeln("<br>" + myString.replace("", "Hi"));
+        //
+        document.writeln("<br>" + myString.replace(" ", " Hi "));
+        //
+        document.writeln("<br>" + myString.toUpperCase());
+        //
+        document.writeln("<br>" + myString.toLowerCase());
+        // Check vị trí của kí tự trong chuỗi
+        document.writeln("<br>" + myString.indexOf("a"));
+        // Check xem có tồn tại kí tự hay ko: true/false
+        document.writeln("<br>" + myString.includes("a"));
+        // tách chuỗi thành 1 mảng
+        document.writeln("<br>" + myString.split(""));
+        //  kiểm tra kí tự bắt đầu của chuỗi có hay không: true/false
+        document.writeln("<br>" + myString.startsWith("H"));
+
+
+        // Number
+        var pi = 3.14159;
+        var pi_fixed = pi.toFixed(2);
+        document.writeln(pi_fixed);
+        //tách chuỗi thành mảmg
+        document.writeln("<br>" + isNaN("na"));
+        //Date
+        let today = new Date();
+        document.writeln("<br>" + today);
+        document.writeln("<br>" + today.getFullYear());
+        document.writeln("<br>" + (today.getMonth() + 1));
+        // Lấy ngày
+        document.writeln("<br>" + today.getDate());
+        // Lấy thứ (CN: 0 )
+        document.writeln("<br>" + "Thứ " + (today.getDay() + 1));
+        // 
+        document.writeln("<br>" + today.getHours());
+        document.writeln("<br>" + today.getMinutes());
+        document.writeln("<br>" + today.getSeconds());
+
+
+
+
     </script>
 </body>
 
