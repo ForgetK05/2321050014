@@ -16,22 +16,39 @@
         let status_Member = false;
         let status_thanh_toan = false;
 
-        donHang = {
+        let donHang = {
             maDonHang: "1810",
             Hoten: "Do Trung Kien",
             Sdt: "0913651583",
             status_Member: true,
-            product: {
+            list_product1: {
                 maSP: "001",
-                tenSP: " matcha" + " Cà phê" + " Trà Sữa",
-                so_Luong: "10",
-                value: 100000,
+                tenSP: " matcha",
+                so_Luong: 10,
+                value: 10000,
+            },
+            list_product2: {
+                maSP: "002",
+                tenSP: " cà phê",
+                so_Luong: 20,
+                value: 20000,
+            },
+            list_product3: {
+                maSP: "003",
+                tenSP: " matcha",
+                so_Luong: 30,
+                value: 30000,
             },
             status_thanh_toan: true,
             diaChi: "Hanoi"
         }
 
-        document.writeln(donHang)
+        let donhang1 = donHang.list_product1.value * donHang.list_product1.so_Luong;
+        let donhang2 = donHang.list_product2.value * donHang.list_product2.so_Luong;
+        let donhang3 = donHang.list_product3.value * donHang.list_product3.so_Luong;
+        let sum = donhang1 + donhang2 + donhang3;
+        document.writeln("Đơn hàng có giá trị là: " + sum)
+        document.writeln("<br>" + "Đơn hàng có giá trị là: " + sum)
 
     </script>
 </body>
