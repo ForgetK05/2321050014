@@ -78,15 +78,15 @@
         let now = new Date().getHours();
         document.writeln(now)
 
-        if (5 <= now && now <= 10) {
+        if (5 <= now && now < 10) {
             document.writeln('Chào buổi sáng')
-        } else if (10 < now && now <= 13) {
+        } else if (10 <= now && now < 13) {
             document.writeln('Chào buổi trưa')
         }
-        else if (13 < now && now <= 17) {
+        else if (13 <= now && now < 17) {
             document.writeln('Chào buổi chiều ')
         }
-        else if (17 < now && now <= 22) {
+        else if (17 <= now && now < 22) {
             document.writeln('Chào buổi tối')
         } else {
             document.writeln('Chào buổi đêm')
