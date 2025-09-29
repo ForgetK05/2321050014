@@ -42,6 +42,11 @@ header {
     padding-left: 60px;
 }
 
+.i1 {
+    width: auto;
+    background-size: contain;
+}
+
 .chucnang ul li {
     padding: 5px;
     border: 8px solid transparent;

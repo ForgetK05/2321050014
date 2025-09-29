@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        document.writeln('Oh my');
+        document.writeln('<br>');
+        //Mảng 
+        let arr = [1, 2, 3, 4, 'a', 'b', 'c', 3, 4];
+        let t = 'ten';
+        //document.writeln(typeof (t));
+        document.writeln(Array.isArray(arr)); // check object có phải là mảng hay ko > vì arr đang thể hiện là 1 object
+        document.writeln('<br>');
+        // Độ dài array
+        document.writeln(arr.length);
+        // lấy phần tử trong mảng
+        document.writeln('<br>');
+        document.writeln(arr[0]);
+        document.writeln('<br>');
+        for (let i = 0; i < arr.length; i++) {
+            document.writeln(arr[i]);
+        }
+        document.writeln('<br>');
+        document.writeln(arr.indexOf(3)); // nếu có 2 phần từ thì ưu tiên phần tử đầu tiên
+        document.writeln('<br>');
+        document.writeln(arr.lastIndexOf(4));
+        document.writeln('<br>');
+
+        arr[3] = 6
+        document.writeln(arr);
+        document.writeln('<br>');
+
+        // Ví dụ
+        let a, b, c, d;
+
+        a = [1, 2, 3];
+        b = 'javascript';
+        c = [42, 'JS'];
+        d = a.concat(b, c);
+        //        d = d.join('/')
+        d.pop();
+        d.push('Kiên');
+        d.reverse();
+        // xoá ptu đầu tiên
+        d.shift(0);
+        // thêm phần tử đầu tiên
+        d.unshift(36)
+        document.writeln(d);
+        document.writeln('<br>' + Array.isArray(d));
+        document.writeln('<br>' + typeof (d));
+
+        document.writeln('<br>');
+
+        // If - else
+        let so = '3000000000000000000000000001';
+        document.writeln(so.length);
+        soCuoi = [so.length - 1]
+        if (soCuoi % 2 == 0) {
+            document.writeln('So chan');
+        } else {
+            document.writeln('le');
+        }
+
+        document.writeln('<br>');
+
+
+
+
+
+    </script>
+</body>
+
+</html>
