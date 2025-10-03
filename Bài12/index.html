@@ -9,6 +9,30 @@
 
 <body>
 
+    <script>
+        // switch
+        let d = new Date();
+        let the_day = d.getDay();
+        document.writeln(the_day);
+        switch (the_day) {
+            case 5:
+                document.writeln("Friday");
+                break;
+            case 6:
+                document.writeln("Saturday");
+                break;
+
+            case 1:
+            case 2:
+            case 3:
+                document.writeln('Hallo') // cả 3 case này đề ra cùng 1 kq
+                break;;
+
+            default:
+                document.writeln('ngoài')
+        }
+
+    </script>
 </body>
 
 </html>
