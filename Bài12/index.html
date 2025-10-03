@@ -60,14 +60,30 @@
 
         //alert
 
-        let result = confirm('Press a button')
+        //let result = confirm('Press a button')
 
+        //let result2 = prompt('Nhập ');
+        document.writeln(result2)
         if (result == true) {
             document.writeln('Bấm ok');
         }
         else {
-            document.writeln('Bấm ok')
+            document.writeln('Bấm cancel');
         }
+
+
+        // hàm
+        function helLo() {
+            document.writeln('Xin Chào');
+        }
+        helLo();
+
+        function heLLo2(ten, namsinh) {
+            document.writeln('Xin chào ' + ten + ' ' + namsinh);
+        }
+
+        heLLo2("KIEN", 10);
+
     </script>
 </body>
 
