@@ -8,37 +8,82 @@
 </head>
 
 <body>
-    <h1>Tính tổng</h1>
+    <h1>Tính tổng: a*0.6 + B*0.3 + C*0.1</h1>
     <div>
-        Nhập số thứ nhất:<input type="number" id="s1">
+        Nhập điểm A:<input type="number" id="s1">
     </div>
     <div>
-        Nhập số thứ hai:<input type="number" id="s2">
+        Nhập điểm B:<input type="number" id="s2">
     </div>
     <div>
-        <button onclick="tinhTong()">Tổng</button>
+        Nhập điểm C:<input type="number" id="s3">
     </div>
     <div>
-        Kết quả: <input id="kq">
+        <button onclick="tinhTongDiem()">Tổng</button>
+    </div>
+    <div>
+        Điểm số là: <input type="number" id="kq">
+    </div>
+    <div>
+        Điểm chữ là: <input id="kc">
     </div>
 
     <!-- tạo cấu trúc  -->
     <script>
         //let n = prompt('Nhập số: ')
         //if (!n) {
-        //    document.writeln("Nhập vào 1 số")
+        //    document.getElementById('kc').value ="Nhập vào 1 số")
         //}
         //function number(number) {
         //    for (let i = 0; i < number; i++) {
-        //        document.writeln("Xin chào " + (i + 1) + "<br>")
+        //        document.getElementById('kc').value ="Xin chào " + (i + 1) + "<br>")
         //    }
         //}
         //number(n)
 
-        function tinhTong() {
-            let sothu1 = parseFloat(document.getElementById("s1").value);
-            let sothu2 = parseFloat(document.getElementById("s2").value);
-            document.getElementById('kq').value = sothu1 + sothu2;
+        function tinhTongDiem() {
+            let a = parseFloat(document.getElementById("s1").value);
+            let b = parseFloat(document.getElementById("s2").value);
+            let c = parseFloat(document.getElementById("s3").value);
+            let error;
+            if ((a || b || c) < 0 || (a || b || c) > 10) {
+                error += " Nhập lại từ (0 - 10)"
+            }
+            if (!a) {
+                error += " Nhập thêm a";
+            }
+            if (!b) {
+                error += " Nhập thêm B";
+            }
+            if (!c) {
+                error += " Nhập thêm C";
+            }
+            if (error) {
+                alert(error)
+            }
+            document.getElementById('kq').value = a * 0.6 + b * 0.3 + c * 0.1;
+
+            let tong = document.getElementById('kq').value;
+            let diemChu;
+            if (a <= 10 && b <= 10 && c <= 10) {
+                if (8 <= tong && tong <= 10) {
+                    document.getElementById('kc').value = 'A';
+                }
+                else if (7 <= tong && tong < 8) {
+                    document.getElementById('kc').value = 'B';
+                }
+                else if (5 <= tong && tong < 7) {
+                    document.getElementById('kc').value = 'C';
+                }
+                else if (4 <= tong && tong < 5) {
+                    document.getElementById('kc').value = 'D';
+                }
+                else if (tong < 4) {
+                    document.getElementById('kc').value = 'Fhế';
+                }
+
+            }
+
 
         }
 
