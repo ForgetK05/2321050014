@@ -8,6 +8,19 @@
 </head>
 
 <body>
+    <h1>Tính tổng</h1>
+    <div>
+        Nhập số thứ nhất:<input type="number" id="s1">
+    </div>
+    <div>
+        Nhập số thứ hai:<input type="number" id="s2">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tổng</button>
+    </div>
+    <div>
+        Kết quả: <input id="kq">
+    </div>
 
     <!-- tạo cấu trúc  -->
     <script>
@@ -20,7 +33,15 @@
         //        document.writeln("Xin chào " + (i + 1) + "<br>")
         //    }
         //}
-        number(n)
+        //number(n)
+
+        function tinhTong() {
+            let sothu1 = parseInt(document.getElementById("s1").value);
+            let sothu2 = parseInt(document.getElementById("s2").value);
+            document.getElementById('kq').value = sothu1 + sothu2;
+
+        }
+
     </script>
 </body>
 
