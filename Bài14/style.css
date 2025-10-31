@@ -1,0 +1,41 @@
+.container {
+    justify-self: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: rgb(242, 255, 185);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+}
+
+.b {
+    justify-self: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.a {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: rgb(151, 135, 247);
+    border-radius: 10px;
+}

@@ -5,12 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<style>
 
+</style>
+
+<body>
+    <!-- <div class="container">
+        <div class="a">
+            <div>
+                <h1>ví dụ về thay đổi chế độ</h1>
+            </div>
+            <img class="anh" src="fieren.png" width="300px" height="250px" alt="">
+            <div>
+                <h1>chế độ sáng</h1>
+            </div>
+            <div>
+                <button onclick="doiChedo()">thay đổi chế độ</button>
+            </div>
+        </div>
+    </div>
 
     <script>
+        let cheDo = true;
+
+        function doiChedo() {
+            if (cheDo == true) {
+                document.getElementsByTagName('body')[0].style = 'background-color: black';
+                document.getElementsByTagName('h1')[0].style = 'color: yellow';
+                document.getElementsByTagName('h1')[1].style = 'color: white';
+                document.getElementsByClassName('anh')[0].src = '113908575_p0_master1200.jpg'
+                cheDo = false;
+            } else {
+                document.getElementsByTagName('body')[0].style = 'background-color: white';
+                document.getElementsByTagName('h1')[0].style = 'color: black';
+                document.getElementsByTagName('h1')[1].style = 'color: black';
+                document.getElementsByClassName('anh')[0].src = 'fieren.png';
+                cheDo = true;
+            }
+        }
+
+
+    </script> -->
+
+    <div class="container">
+        <div>
+            <div>
+                <label for="kg">Nhập cân nặng (): </label>
+                <input type="text" id="kg">
+            </div>
+
+            <div>
+                <label for="chieuCao">Nhập chiều cao(m): </label>
+                <input type="text" id="chieuCao" placeholder=" VD: 1.65 ">
+            </div>
+
+            <div>
+                <label for="BMI">Chỉ Số BMI</label>
+                <input id="kq" readonly>
+            </div>
+            <div><label for="">Loại :</label>
+                <input id="loai" readonly>
+            </div>
+        </div>
+        <div>
+            <div class="a">
+                <img src="fieren.png" width="200" height="300" alt="">
+            </div>
+            <div class="b">
+                <button onclick="tinhBMI()">Tính</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function tinhBMI() {
+            let kg = parseFloat(document.getElementById('kg').value)
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value)
+
+            if (isNaN(chieuCao) || chieuCao < 0) {
+                alert("vui lòng không để trống hoặc chiều cao không hợp lệ")
+                return;
+            }
+
+            if (isNaN(kg) || kg < 0) {
+                alert("vui lòng không để trống hoặc kg không hợp lệ")
+                return;
+            }
+
+            let bmi = kg / (chieuCao * chieuCao)
+            bmi = bmi.toFixed(2);
+            document.getElementById('kq').value = bmi;
+
+
+            if (bmi < 18.5) {
+                document.getElementById('loai').value = "Gầy";
+                document.getElementsByTagName('img')[0].src = '1.jpg';
+            }
+            else if (bmi < 25) {
+                document.getElementById('loai').value = "Bình thường";
+                document.getElementsByTagName('img')[0].src = '2.jpg';
+            }
+            else if (bmi < 30) {
+                document.getElementById('loai').value = "Thừa cân";
+                document.getElementsByTagName('img')[0].src = '3.jpg';
+            }
+            else if (bmi < 40) {
+                document.getElementById('loai').value = "Béo phì cấp 1-2";
+                document.getElementsByTagName('img')[0].src = '4.jpg';
+            }
+            else {
+                document.getElementById('loai').value = "Béo phì nặng";
+                document.getElementsByTagName('img')[0].src = '5.jpg';
+            }
+
+        }
 
     </script>
 </body>
