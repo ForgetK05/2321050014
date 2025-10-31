@@ -35,7 +35,7 @@
         <button onclick="pheptinh('nhan')"> Nhân</button>
         <button onclick="pheptinh('chia')"> Chia</button>
     </div>
-    <div>Điểm số là: <input type="number" id="kq1"></div>
+    <div>Điểm số là: <input type="number" id="kq"></div>
 
     <!-- tạo cấu trúc  -->
     <script>
@@ -94,8 +94,8 @@
         }
 
         function pheptinh(val) {
-            let a = document.getElementById("so1").value;
-            let b = document.getElementById("so2").value;
+            let a = parseFloat(document.getElementById("so1").value);
+            let b = parseFloat(document.getElementById("so2").value);
             let kq;
             if (!a || !b) {
                 document.writeln("Nhập lại")
@@ -103,16 +103,16 @@
             if (val = "cong") {
                 kq = a + b;
             }
-            if (val = "tru") {
+            else if (val = "tru") {
                 kq = a - b;
             }
-            if (val = "nhan") {
+            else if (val = "nhan") {
                 kq = a * b;
             }
-            if (val = "chia") {
+            else if (val = "chia") {
                 kq = a / b;
             }
-            document.getElementById("kq1").value = kq;
+            document.getElementById("kq").value = kq;
         }
 
     </script>
