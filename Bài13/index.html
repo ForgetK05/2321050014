@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Tính tổng: a*0.6 + B*0.3 + C*0.1</h1>
+    <!-- <h1>Tính tổng: a*0.6 + B*0.3 + C*0.1</h1>
     <div>
         Nhập điểm A:<input type="number" id="s1">
     </div>
@@ -26,7 +26,16 @@
     </div>
     <div>
         Điểm chữ là: <input id="kc">
+    </div> -->
+    <div>Nhập Số đầu: <input type="number" id="so1"></div>
+    <div>Nhập Số thứ 2: <input type="number" id="so2"></div>
+    <div>Phép tính:
+        <button onclick="pheptinh('cong')"> Cộng</button>
+        <button onclick="pheptinh('tru')"> Trừ</button>
+        <button onclick="pheptinh('nhan')"> Nhân</button>
+        <button onclick="pheptinh('chia')"> Chia</button>
     </div>
+    <div>Điểm số là: <input type="number" id="kq1"></div>
 
     <!-- tạo cấu trúc  -->
     <script>
@@ -45,21 +54,21 @@
             let a = parseFloat(document.getElementById("s1").value);
             let b = parseFloat(document.getElementById("s2").value);
             let c = parseFloat(document.getElementById("s3").value);
-            let error;
+            let error = "";
             if ((a || b || c) < 0 || (a || b || c) > 10) {
-                error += " Nhập lại từ (0 - 10)"
+                error += "\n Nhập lại từ (0 - 10)\n"
             }
             if (!a) {
-                error += " Nhập thêm A";
+                error += " Nhập thêm A \n";
             }
             if (!b) {
-                error += " Nhập thêm B";
+                error += " Nhập thêm B \n";
             }
             if (!c) {
-                error += " Nhập thêm C";
+                error += " Nhập thêm C \n";
             }
             if (error) {
-                alert(error)
+                alert(error + "\n")
             }
             document.getElementById('kq').value = a * 0.6 + b * 0.3 + c * 0.1;
 
@@ -82,6 +91,28 @@
                     document.getElementById('kc').value = 'Fế';
                 }
             }
+        }
+
+        function pheptinh(val) {
+            let a = document.getElementById("so1").value;
+            let b = document.getElementById("so2").value;
+            let kq;
+            if (!a || !b) {
+                document.writeln("Nhập lại")
+            }
+            if (val = "cong") {
+                kq = a + b;
+            }
+            if (val = "tru") {
+                kq = a - b;
+            }
+            if (val = "nhan") {
+                kq = a * b;
+            }
+            if (val = "chia") {
+                kq = a / b;
+            }
+            document.getElementById("kq1").value = kq;
         }
 
     </script>
