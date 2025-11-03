@@ -1,7 +1,7 @@
 let danhSachPhim = [
     {
         id: 1,
-        tenPhim: "Mưa đỏ",
+        tenPhim: "Mưa đỏ ",
         namPhatHanh: 2025,
         tuoi: 16,
         thoiLuong: 2,
@@ -24,11 +24,16 @@ let danhSachPhim = [
 let phimHienTai = danhSachPhim[0];
 
 let banner = document.getElementsByClassName('banner')[0];
+let id;
+let name;
+let namPhatHanh;
+let age;
 
 function chonPhim(idPhim){
     for (let i = 0; i < danhSachPhim.length; i++){
         if(danhSachPhim[i].id == idPhim){
             banner.style.backgroundImage = danhSachPhim[i].poster;
+
         }
     }
 }

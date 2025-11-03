@@ -12,12 +12,19 @@ header {
     height: 10vh;
 }
 
-.banner{
+.banner {
     background-image: url('./img/mua-do2-1122.jpeg');
     width: 100%;
     height: 600px;
     background-size: cover;
     background-position: center;
+}
+
+.b1 {
+    display: flex;
+    text-align: end;
+    padding-top: 530px;
+    justify-content: space-around;
 }
 
 .container {
