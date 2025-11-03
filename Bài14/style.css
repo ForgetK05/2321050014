@@ -1,12 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: linear-gradient(180deg, #d5d8c7, #ee7676); */
+    animation: doimau 2s infinite;
+}
+
+@keyframes doimau {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: yellow;
+        color: black;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    80% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
 .container {
     justify-self: center;
     align-content: center;
     border-radius: 10px;
-    background-color: rgb(242, 255, 185);
+    background-image: linear-gradient(180deg, #98bacc, #aa95d4);
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
+    gap: 100px;
 
 }
 
@@ -36,6 +73,6 @@ button {
     cursor: pointer;
     border: none;
     padding: 10px;
-    background-color: rgb(151, 135, 247);
+    background-color: rgb(89, 131, 249);
     border-radius: 10px;
 }
