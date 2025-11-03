@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: small;
+    font-size: 13px;
 
 }
 
@@ -30,6 +30,7 @@ header {
     display: flex;
     font-size: 10;
 }
+
 
 .chucnang ul {
     display: flex;
@@ -43,24 +44,26 @@ header {
 }
 
 .i1 {
-    width: auto;
-    background-size: contain;
+    max-width: 100%;
+    height: auto;
 }
+
+
 
 .chucnang ul li {
     padding: 5px;
     border: 8px solid transparent;
     border-radius: 12px;
+    gap: 45px;
 }
 
 .chucnang ul li:hover {
     cursor: pointer;
     border-color: orange;
-    /* Khi hover, viền chuyển sang màu cam */
 }
 
 .l1 {
-    background-color: #f8b931;
+    background-color: #d4c29b;
 }
 
 main ul {
@@ -71,30 +74,37 @@ main ul {
     margin: 0;
 }
 
-nav ul {
+.c nav .ul1 {
     display: flex;
     align-items: center;
     height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 15px;
+    gap: 45px;
 
+
+}
+
+.ul2 {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .c {
     width: 100%;
+    justify-content: space-between;
 }
 
 nav ul li img {
-    width: 100%;
-    height: 80px;
+    width: 100px;
+    height: 60px;
     display: block;
 }
 
-li {
-    margin-right: 20px;
-}
 
 a {
     color: white;
