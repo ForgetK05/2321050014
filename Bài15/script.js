@@ -26,6 +26,88 @@ let danhSachPhim = [
         quocGia: "Mỹ",
         poster: "img/phim/cam.jpg"
     },
+    {
+        id: 4 ,
+        tenPhim: "Cô giáo em là số 1",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/cogiaoemlaso1.jpg"
+    },
+    {
+        id: 5  ,
+        tenPhim: "Conan",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/conan.jpg"
+    },
+    {
+        id: 6  ,
+        tenPhim: "Đẹp trai thấy sai sai",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/deptraithaysaisai.jpg"
+    },
+    {
+        id: 7  ,
+        tenPhim: "John Wick ",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/johnwi.jpg"
+    },
+    {
+        id: 8 ,
+        tenPhim: "Kẻ ăn hồn",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/keanhon.jpg"
+    },
+    {
+        id: 9,
+        tenPhim: "Kung Fu Panda",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/kungfupanda.jpg"
+    },
+    {
+        id: 10,
+        tenPhim: "Mai",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/mai.jpg"
+    },
+    {
+        id: 11,
+        tenPhim: "Mắt biếc",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/matbiec.jpg"
+    },
+    {
+        id: 12,
+        tenPhim: "Minions",
+        namPhatHanh: 2025,
+        tuoi: 16,
+        thoiLuong: 2,
+        quocGia: "Mỹ",
+        poster: "img/phim/minion.jpg"
+    },
+
     
 ]
 
@@ -38,16 +120,24 @@ let phimHienTai = danhSachPhim[0];
 // document.write("<hr>");
 
 let banner = document.getElementsByClassName('banner')[0];
-// let id = document.getElementById('selectPhim').value;
-// let name = document.getElementById('name').value;
-// let namPhatHanh = document.getElementById('namPhatHanh').value;
-// let age = document.getElementById('age').value;
+let name = document.getElementById('Tên phim');
+let namPhatHanh = document.getElementById('Năm');
+let thoiLuong = document.getElementById('Thời lượng');
+let quocGia = document.getElementById('Quốc gia');
+let age = document.getElementById('Độ tuổi');
 
 
-function chonPhim(idPhim){
-    for (let i = 0; i < danhSachPhim.length; i++){
-        if(danhSachPhim[i].id == idPhim){
-            banner.style.backgroundImage = "url('" + danhSachPhim[i].poster + "')";
+
+function chonPhim(idPhim) {
+for (let i = 0; i < danhSachPhim.length; i++) {
+    if (danhSachPhim[i].id == idPhim) {
+        banner.style.backgroundImage = "url('" + danhSachPhim[i].poster + "')";
+        name.innerText = "Tên phim: " + danhSachPhim[i].tenPhim;
+        namPhatHanh.innerText = "Năm phát hành: " + danhSachPhim[i].namPhatHanh;
+        thoiLuong.innerText = "Thời lượng: " + danhSachPhim[i].thoiLuong + " giờ";
+        quocGia.innerText = "Quốc gia: " + danhSachPhim[i].quocGia;
+        age.innerText = "Độ tuổi: " + danhSachPhim[i].tuoi + "+";
+        break; 
         }
     }
 }
