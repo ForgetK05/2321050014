@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin: 0;
     color: white;
     font-family: 'SF Pro Display', sans-serif;
@@ -7,25 +7,12 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 10vh;
 }
 
-.banner {
-    background-image: url('./img/mua-do2-1122.jpeg');
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-}
 
-.b1 {
-    display: flex;
-    text-align: end;
-    padding-top: 530px;
-    justify-content: space-around;
-}
 
 .container {
     margin: auto;
@@ -40,148 +27,142 @@ header {
     justify-content: space-between;
 }
 
-.container ul {
-    width: 100%;
-}
-
-.chucnang {
+.head1,
+.head2 {
     display: flex;
     align-items: center;
+    gap: 75px;
 }
 
-.chucnang li {
-    margin-left: 10px;
+.head1 img {
+    padding-right: 40px;
 }
 
-.credit-card a {
-    padding: 10px 15px;
-    background-color: rgb(255, 81, 0);
-    border-radius: 25px;
-}
-
-.credit-card a:hover {
-    filter: brightness(125%);
-    color: #fff;
-}
-
-
-ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 70%;
-}
-
-li {
-    margin: 20px;
+.head1 a {
     font-weight: bold;
-
-}
-
-a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
+.head2 a,
+.dm1-1 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 70%;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    border-bottom: 1px solid gray;
+    min-width: 70%;
+}
+
+.pic1 {
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.pic2 {
+    width: 220px;
+    height: 350px;
+}
+
+
+.pic3 {
+    width: 270px;
+    height: 150px;
+}
+
+.font {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 main {
     width: 80%;
-    background-color: black;
-    margin: auto;
-    border-bottom: 1px solid gray;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
 }
 
-.nav-title {
-    padding-top: 10px;
-}
-
-.title {
+.main1-1 {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.title p {
-    font-size: 25px;
-    font-weight: bold;
+/* Movie lists: use CSS Grid so items are evenly spaced and never overflow */
+.dm1-1,
+.dm2-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    align-items: start;
+    justify-items: center;
+    width: 100%;
 }
 
-.movie {
-    display: flex;
-    overflow: scroll;
-
+.dm1,
+.dm2 {
+    width: 100%;
 }
 
-.m {
-    margin-right: 15px;
-}
-
-
-.m img {
-    border-radius: 5%;
-}
-
-.movie::-webkit-scrollbar {
-    display: none;
-}
-
-.m1 {
-    margin-top: 10px;
-}
-
-.title span {
-    font-size: 14px;
-}
-
-.footer-top {
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 8vh;
+    margin-top: 20px;
     width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+
+}
+
+.footer-main {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
-
 }
 
-.footer-top ul {
-    display: block;
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
 
-.footer-top li {
-    margin: 0;
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col:last-child {
+    text-align: right;
+}
+
+h4 {
+    color: goldenrod;
+}
+
+.footer-bottom {
+    text-align: start;
+    margin-top: 10px;
     font-size: 14px;
-    margin: 8px 0;
-    font-weight: 500;
-}
-
-.footer-top p {
-    font-weight: 100;
-    font-size: 15px;
-    color: rgb(209, 209, 209);
-}
-
-.ft1 {
-    width: 33.33333%;
-}
-
-li a:hover {
-    color: orange;
-}
-
-.social a {
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.ft2 {
-    width: 80%;
-    margin: auto;
-    padding: 50px;
-}
-
-.ft2 {
-    font-size: 13px;
+    color: gray;
+    padding-bottom: 10px;
 }

@@ -24,10 +24,10 @@ let danhSachPhim = [
 let phimHienTai = danhSachPhim[0];
 
 let banner = document.getElementsByClassName('banner')[0];
-let id;
-let name;
-let namPhatHanh;
-let age;
+let id = document.getElementById('selectPhim').value;
+let name = document.getElementById('name').value;
+let namPhatHanh = document.getElementById('namPhatHanh').value;
+let age = document.getElementById('age').value;
 
 function chonPhim(idPhim){
     for (let i = 0; i < danhSachPhim.length; i++){
