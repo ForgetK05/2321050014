@@ -68,6 +68,7 @@ main {
 .pic2 {
     width: 220px;
     height: 350px;
+    border-radius: 10px;
 }
 
 
@@ -107,9 +108,9 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
-/* Movie lists: use CSS Grid so items are evenly spaced and never overflow */
 .dm1-1,
 .dm2-1 {
     display: grid;
@@ -118,6 +119,36 @@ main {
     align-items: start;
     justify-items: center;
     width: 100%;
+}
+
+.dm1-1 div:hover {
+    display: inline-block;
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+}
+
+.dm1-1 div a,
+.dm2-1 div a {
+    display: inline-block;
+    border: 5px solid transparent;
+    transition: border-color .18s ease, transform .18s ease;
+    border-radius: 10px;
+}
+
+.dm1-1 div a:hover,
+.dm1-1 div a:focus-visible {
+    cursor: pointer;
+    border-color: rgb(105, 105, 105);
+    transform: translateY(-4px);
+    outline: none;
+}
+
+
+.dm2-1 div a:hover,
+.dm2-1 div a:focus-visible {
+    cursor: pointer;
+    transform: translateY(-4px);
+    outline: none;
 }
 
 .dm1,
@@ -130,7 +161,7 @@ footer {
     height: 8vh;
     margin-top: 20px;
     width: 80%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 1.5rem 1rem;
 
