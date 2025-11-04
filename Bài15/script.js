@@ -69,7 +69,7 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/keanhon.jpg"
+        poster: "img/phim/kah.jpg"
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/matbiec.jpg"
+        poster: "img/phim/mat-biec-phim-dien-anh.jpg"
     },
     {
         id: 12,
