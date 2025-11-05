@@ -6,7 +6,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/beautyandthebeaets.jpg"
+        poster: "img/phim/bnb.jpg",
+        trailer: "https://youtu.be/ZdzBRbgNs-I?si=lCXRByq4Y4ax9SCd"
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/bongdungtrungso.jpg"
+        poster: "img/phim/bdts.jpeg",
+        trailer: "https://youtu.be/D3KbO3QF-lg?si=rNNz30c7Dk1mfSh9"
     },
     {
         id: 3  ,
@@ -24,7 +26,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/cam.jpg"
+        poster: "img/phim/cam1.jpg",
+        trailer: "https://youtu.be/_8qUFEmPQbc?si=t-OWh2TcE5te51Ia"
     },
     {
         id: 4 ,
@@ -33,16 +36,18 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/cogiaoemlaso1.jpg"
+        poster: "img/phim/cgels1.jpg",
+        trailer: "https://youtu.be/XieLp58PaJg?si=aFbEX30uZHOpMJS6"
     },
     {
         id: 5  ,
-        tenPhim: "Conan",
+        tenPhim: "Conan Movie 27",
         namPhatHanh: 2025,
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/conan.jpg"
+        poster: "img/phim/conan27.jpg",
+        trailer: "https://youtu.be/C4pG3GbhQZw?si=GNqmnoAQOZngLCj8"
     },
     {
         id: 6  ,
@@ -51,7 +56,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/deptraithaysaisai.jpg"
+        poster: "img/phim/dep-trai-thay-sai-sai.jpg",
+        trailer: "https://youtu.be/qoM5mbkOwMg?si=5RA8pRwELqw5cLcv"
     },
     {
         id: 7  ,
@@ -60,7 +66,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/johnwi.jpg"
+        poster: "img/phim/jw4.jpg",
+        trailer: "https://youtu.be/yjRHZEUamCc?si=gCjRpvpI9ZD49MtV"
     },
     {
         id: 8 ,
@@ -69,7 +76,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/kah.jpg"
+        poster: "img/phim/kah.jpg",
+        trailer: "https://youtu.be/xWh0g4rKGjI?si=E_GsfriVmHwcFoSC"
     },
     {
         id: 9,
@@ -78,7 +86,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/kungfupanda.jpg"
+        poster: "img/phim/panda.jpg",
+        trailer: "https://youtu.be/_inKs4eeHiI?si=DQ9hThWo-RRSbyNY"
     },
     {
         id: 10,
@@ -87,7 +96,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/mai.jpg"
+        poster: "img/phim/mai2.jpg",
+        trailer: "https://youtu.be/HXWRTGbhb4U?si=KSxXaME37ph_19jY"
     },
     {
         id: 11,
@@ -96,7 +106,8 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/mat-biec-phim-dien-anh.jpg"
+        poster: "img/phim/mat-biec-phim-dien-anh.jpg",
+        trailer: "https://youtu.be/ITlQ0oU7tDA?si=pzOcBgDdifHnSWaD"
     },
     {
         id: 12,
@@ -105,19 +116,14 @@ let danhSachPhim = [
         tuoi: 16,
         thoiLuong: 2,
         quocGia: "Mỹ",
-        poster: "img/phim/minion.jpg"
+        poster: "img/phim/minion1.jpeg",
+        trailer: "https://youtu.be/6DxjJzmYsXo?si=E2VD9_v5rPR0FvGY"
     },
 
     
 ]
 
 let phimHienTai = danhSachPhim[0];
-// document.write("<h2>" + phimHienTai.tenPhim + "</h2>");
-// document.write("<p>Năm phát hành: " + phimHienTai.namPhatHanh + "</p>");
-// document.write("<p>Độ tuổi: " + phimHienTai.tuoi + "+</p>");
-// document.write("<p>Thời lượng: " + phimHienTai.thoiLuong + " giờ</p>");
-// document.write("<p>Quốc gia: " + phimHienTai.poster + "</p>");
-// document.write("<hr>");
 
 let banner = document.getElementsByClassName('banner')[0];
 let name = document.getElementById('Tên phim');
@@ -125,7 +131,8 @@ let namPhatHanh = document.getElementById('Năm');
 let thoiLuong = document.getElementById('Thời lượng');
 let quocGia = document.getElementById('Quốc gia');
 let age = document.getElementById('Độ tuổi');
-
+let trailer = document.getElementById('Trailer');
+let bannerContent = document.querySelector('.banner-content'); // Đảm bảo bạn đã có dòng này để chọn phần tử
 
 
 function chonPhim(idPhim) {
@@ -137,7 +144,9 @@ for (let i = 0; i < danhSachPhim.length; i++) {
         thoiLuong.innerText = "Thời lượng: " + danhSachPhim[i].thoiLuong + " giờ";
         quocGia.innerText = "Quốc gia: " + danhSachPhim[i].quocGia;
         age.innerText = "Độ tuổi: " + danhSachPhim[i].tuoi + "+";
-        break; 
+        trailer.href = danhSachPhim[i].trailer;
+        bannerContent.classList.add('show');
+        break;
         }
     }
 }

@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: 'SF Pro Display', sans-serif;
     zoom: 0.9;
+    scrollbar-width: none;
 }
 
 header {
@@ -71,6 +72,9 @@ main {
     height: 700px;
     object-fit: none;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .banner-content {
@@ -82,8 +86,22 @@ main {
     left: 0;
     width: 100%;
     background-color: rgba(192, 70, 21, 0.75);
-    padding: 100px;
     border-radius: 10px;
+    opacity: 0;
+    /* Làm trong suốt hoàn toàn */
+    visibility: hidden;
+    /* Ẩn khỏi luồng tương tác của trang */
+    transform: translateY(100%);
+    transition: all 2.5s ease-out;
+}
+
+.banner-content.show {
+    opacity: 1;
+    /* Hiện rõ */
+    visibility: visible;
+    /* Cho phép tương tác trở lại */
+    transform: translateY(0);
+    /* Trượt về vị trí ban đầu */
 }
 
 .banner div p {
