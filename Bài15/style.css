@@ -97,11 +97,8 @@ main {
 
 .banner-content.show {
     opacity: 1;
-    /* Hiện rõ */
     visibility: visible;
-    /* Cho phép tương tác trở lại */
     transform: translateY(0);
-    /* Trượt về vị trí ban đầu */
 }
 
 .banner div p {
