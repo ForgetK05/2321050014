@@ -132,13 +132,13 @@ let thoiLuong = document.getElementById('Thời lượng');
 let quocGia = document.getElementById('Quốc gia');
 let age = document.getElementById('Độ tuổi');
 let trailer = document.getElementById('Trailer');
-let bannerContent = document.querySelector('.banner-content'); // Đảm bảo bạn đã có dòng này để chọn phần tử
+let bannerContent = document.querySelector('.banner-content');
 
 
 function chonPhim(idPhim) {
 for (let i = 0; i < danhSachPhim.length; i++) {
     if (danhSachPhim[i].id == idPhim) {
-        banner.style.backgroundImage = "url('" + danhSachPhim[i].poster + "')";
+        banner.style.backgroundImage =danhSachPhim[i].poster;
         name.innerText = "Tên phim: " + danhSachPhim[i].tenPhim;
         namPhatHanh.innerText = "Năm phát hành: " + danhSachPhim[i].namPhatHanh;
         thoiLuong.innerText = "Thời lượng: " + danhSachPhim[i].thoiLuong + " giờ";
