@@ -138,7 +138,7 @@ let bannerContent = document.querySelector('.banner-content');
 function chonPhim(idPhim) {
 for (let i = 0; i < danhSachPhim.length; i++) {
     if (danhSachPhim[i].id == idPhim) {
-        banner.style.backgroundImage =danhSachPhim[i].poster;
+        banner.style.backgroundImage = "url('" + danhSachPhim[i].poster + "')";
         name.innerText = "Tên phim: " + danhSachPhim[i].tenPhim;
         namPhatHanh.innerText = "Năm phát hành: " + danhSachPhim[i].namPhatHanh;
         thoiLuong.innerText = "Thời lượng: " + danhSachPhim[i].thoiLuong + " giờ";
