@@ -93,7 +93,7 @@ main {
     transition: all 0.25s ease-out;
 }
 
-.banner-content.show {
+.banner-content .show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
