@@ -88,9 +88,7 @@ main {
     background-color: rgba(192, 70, 21, 0.75);
     border-radius: 10px;
     opacity: 0;
-    /* Làm trong suốt hoàn toàn */
     visibility: hidden;
-    /* Ẩn khỏi luồng tương tác của trang */
     transform: translateY(100%);
     transition: all 0.25s ease-out;
 }
