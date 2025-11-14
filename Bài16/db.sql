@@ -5,13 +5,20 @@ USE quan_li_web_film;
 CREATE TABLE film(
     id_film INT PRIMARY KEY,
 	ten_phim VARCHAR(25),
-	nam VARCHAR(4),
+	nam INT,
 	ten_the_loai VARCHAR(25),
     dien_vien VARCHAR(25),
-    quoc_gia VARCHAR(25),
-    thoi_luong INT,
+    quoc_gia_id INT,
+    thoi_luong TIME,
     dao_dien_id VARCHAR(25),
+    mo_ta TEXT,
     FOREIGN KEY (id_film) REFERENCES the_loai_phim (id_film)
+);
+
+CREATE TABLE film_dien_vien(
+    id INT,
+    id_film INT,
+    dien_vien VARCHAR (25)
 );
 
 # 2. Thể loại phim
@@ -48,6 +55,9 @@ CREATE TABLE quoc_gia(
 CREATE TABLE tap_phim(
     id_tap_phim INT PRIMARY KEY,
     ten_phim VARCHAR(25),
-    so_luong_tap INT
+    so_luong_tap INT,
+    id_film INT,
+    trailer VARCHAR(25),
+    tieu_de VARCHAR(25)
 );
 
