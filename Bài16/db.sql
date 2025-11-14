@@ -10,6 +10,7 @@ CREATE TABLE film(
     dien_vien VARCHAR(25),
     quoc_gia VARCHAR(25),
     thoi_luong INT,
+    dao_dien_id VARCHAR(25),
     FOREIGN KEY (id_film) REFERENCES the_loai_phim (id_film)
 );
 
@@ -23,9 +24,18 @@ CREATE TABLE the_loai_phim(
 # 3. User
 CREATE TABLE nguoi_dung(
     id_user INT PRIMARY KEY,
-    ten_tk VARCHAR(50),
+    ten_dang_nhap VARCHAR(50),
     emai VARCHAR(25),
-    mat_khau VARCHAR(25)
+    mat_khau VARCHAR(25),
+    sdt VARCHAR (10),
+    hovaten VARCHAR (25),
+    quyen_id INT,
+    ngay_sinh DATETIME
+);
+
+CREATE TABLE quyen (
+    id INT PRIMARY KEY,
+    ten_quyen VARCHAR(25)
 );
 
 # 4. Quốc gia
@@ -40,3 +50,4 @@ CREATE TABLE tap_phim(
     ten_phim VARCHAR(25),
     so_luong_tap INT
 );
+
