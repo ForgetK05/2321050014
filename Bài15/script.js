@@ -126,7 +126,7 @@ let danhSachPhim = [
 let phimHienTai = danhSachPhim[0];
 
 let banner = document.getElementsByClassName('banner')[0];
-let name = document.getElementById('Tên phim');
+let name1 = document.getElementById('Tên phim');
 let namPhatHanh = document.getElementById('Năm');
 let thoiLuong = document.getElementById('Thời lượng');
 let quocGia = document.getElementById('Quốc gia');
@@ -139,7 +139,7 @@ function chonPhim(idPhim) {
 for (let i = 0; i < danhSachPhim.length; i++) {
     if (danhSachPhim[i].id == idPhim) {
         banner.style.backgroundImage = "url('" + danhSachPhim[i].poster + "')";
-        name.innerText = "Tên phim: " + danhSachPhim[i].tenPhim;
+        name1.innerText = "Tên phim: " + danhSachPhim[i].tenPhim;
         namPhatHanh.innerText = "Năm phát hành: " + danhSachPhim[i].namPhatHanh;
         thoiLuong.innerText = "Thời lượng: " + danhSachPhim[i].thoiLuong + " giờ";
         quocGia.innerText = "Quốc gia: " + danhSachPhim[i].quocGia;
