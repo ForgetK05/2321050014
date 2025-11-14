@@ -23,7 +23,7 @@ CREATE TABLE the_loai_phim(
 # 3. User
 CREATE TABLE nguoi_dung(
     id_user INT PRIMARY KEY,
-    ten_user VARCHAR(25),
+    ten_tk VARCHAR(50),
     emai VARCHAR(25),
     mat_khau VARCHAR(25)
 );
