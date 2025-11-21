@@ -116,37 +116,41 @@ VALUES (1, 'Hành Động'),
 
 # NGười dùng
 INSERT IGNORE INTO nguoi_dung (id, ten_dang_nhap, mat_khau, ho_ten, email, sdt, ngay_sinh, vai_tro_id)
-VALUES 
-        (1, 'admin', 'admin123', 'Quản Trị Viên', '1@gmail.com', '0123456789', '1990-01-01', 1),
-        (2, 'dao_dien_1', 'password1', 'Đạo Diễn 1', '2gmail.com', '0987654321', '1980-05-15', 2),
-        (3, 'dien_vien_1', 'password2', 'Diễn Viên 1', '3@gmail.com', '0112233445', '1995-07-20', 3),
-        (4, 'user_1', 'password3', 'Người Dùng 1', '4@gmail.com', '0223344556', '2000-10-30', 4),
-        (5, 'user_2', 'password4', 'Người Dùng 2', '5@gmail.com', '0334455667', '1998-12-12', 4),
-        (6, 'dien_vien_2', 'password5', 'Diễn Viên 2', '6@gmail.com', '0445566778', '1992-03-25', 3),
-        (7, 'dao_dien_2', 'password6', 'Đạo Diễn 2', '7@gmail.com', '0556677889', '1975-11-11', 2),
-        (8, 'user_3', 'password7', 'Người Dùng 3', '8@gmail.com', '0667788990', '2001-04-04', 4),
-        (9, 'dien_vien_3', 'password8', 'Diễn Viên 3', '9@gmail.com', '0778899001', '1993-06-06', 3),
-        (10, 'user_4', 'password9', 'Người Dùng 4', '10@gmail.com', '0889900112', '1999-09-09', 4),
-        (11, 'user_5', 'password10', 'Người Dùng 5', '11@gmail.com', '0990011223', '2002-02-02', 4),
-        (12, 'dien_vien_4', 'password11', 'Diễn Viên 4', '12@gmail.com', '0101122334', '1994-08-08', 3),
-        (13, 'dao_dien_3', 'password12', 'Đạo Diễn 3', '13@gmail.com', '0212233445', '1985-10-10', 2),
-        (14, 'user_6', 'password13', 'Người Dùng 6', '14@gmail.com', '0323344556', '2003-03-03', 4),
-        (15, 'dien_vien_5', 'password14', 'Diễn Viên 5', '15@gmail.com', '0434455667', '1991-05-05', 3),
-        (16, 'user_7', 'password15', 'Người Dùng 7', '16@gmail.com', '0545566778', '1997-07-07', 4),
-        (17, 'dao_dien_4', 'password16', 'Đạo Diễn 4', '17@gmail.com', '0656677889', '1982-12-12', 2),
-        (18, 'dien_vien_6', 'password17', 'Diễn Viên 6', '18@gmail.com', '0767788990', '1996-11-11', 3),
-        (19, 'user_8', 'password18', 'Người Dùng 8', '19@gmail.com', '0878899001', '2004-01-01', 4),
-        (20, 'user_9', 'password19', 'Người Dùng 9', '20@gmail.com', '0989900112', '1998-06-06', 4),
-        (21, 'dien_vien_7', 'password20', 'Diễn Viên 7', '21@gmail.com', '0190011223', '1993-09-09', 3),
-        (22, 'dao_dien_5', 'password21', 'Đạo Diễn 5', '22@gmail.com', '0201122334', '1988-04-04', 2),
-        (23, 'user_10', 'password22', 'Người Dùng 10', '23@gmail.com', '0312233445', '2000-12-12', 4),
-        (24, 'dien_vien_8', 'password23', 'Diễn Viên 8', '24@gmail.com', '0423344556', '1992-02-02', 3),
-        (25, 'user_11', 'password24', 'Người Dùng 11', '25@gmail.com', '0534455667', '1999-03-03', 4),
-        (26, 'dao_dien_6', 'password25', 'Đạo Diễn 6', '26@gmail.com', '0645566778', '1983-05-05', 2),
-        (27, 'dien_vien_9', 'password26', 'Diễn Viên 9', '27@gmail.com', '0756677889', '1995-08-08', 3),
-        (28, 'user_12', 'password27', 'Người Dùng 12', '28@gmail.com', '0867788990', '2001-11-11', 4),
-        (29, 'user_13', 'password28', 'Người Dùng 13', '29@gmail.com', '0978899001', '1997-04-04', 4),
-        (30, 'dien_vien_10', 'password29', 'Diễn Viên 10', '30@gmail.com', '0189900112', '1994-07-07', 3);
+VALUES
+    -- Đạo diễn
+    (1, 'nolan', 'pass123', 'Christopher Nolan', 'nolan@gmail.com', '0123456789', '1970-07-30', 2),
+    (2, 'coppola', 'pass123', 'Francis Ford Coppola', 'coppola@gmail.com', '0123456790', '1939-04-07', 2),
+    (3, 'bong_joonho', 'pass123', 'Bong Joon-ho', 'bongjh@gmail.com', '0123456791', '1969-09-14', 2),
+    (4, 'miyazaki', 'pass123', 'Hayao Miyazaki', 'miyazaki@gmail.com', '0123456792', '1941-01-05', 2),
+    (5, 'fincher', 'pass123', 'David Fincher', 'fincher@gmail.com', '0123456793', '1962-08-28', 2),
+    (6, 'cameron', 'pass123', 'James Cameron', 'cameron@gmail.com', '0123456794', '1954-08-16', 2),
+    (7, 'joe_russo', 'pass123', 'Joe Russo', 'joe_russo@gmail.com', '0123456795', '1971-07-18', 2),
+    (8, 'gilligan', 'pass123', 'Vince Gilligan', 'gilligan@gmail.com', '0123456796', '1967-02-10', 2),
+    (9, 'benioff', 'pass123', 'David Benioff', 'benioff@gmail.com', '0123456797', '1970-09-25', 2),
+    (10, 'darabont', 'pass123', 'Frank Darabont', 'darabont@gmail.com', '0123456798', '1959-01-28', 2),
+    -- Diễn viên
+    (11, 'leo', 'pass123', 'Leonardo DiCaprio', 'leo@gmail.com', '0987654321', '1974-11-11', 3),
+    (12, 'bale', 'pass123', 'Christian Bale', 'bale@gmail.com', '0987654322', '1974-01-30', 3),
+    (13, 'pacino', 'pass123', 'Al Pacino', 'pacino@gmail.com', '0987654323', '1940-04-25', 3),
+    (14, 'pitt', 'pass123', 'Brad Pitt', 'pitt@gmail.com', '0987654324', '1963-12-18', 3),
+    (15, 'norton', 'pass123', 'Edward Norton', 'norton@gmail.com', '0987654325', '1969-08-18', 3),
+    (16, 'cranston', 'pass123', 'Bryan Cranston', 'cranston@gmail.com', '0987654326', '1956-03-07', 3),
+    (17, 'emilia', 'pass123', 'Emilia Clarke', 'emilia@gmail.com', '0987654327', '1986-10-23', 3),
+    (18, 'freeman', 'pass123', 'Morgan Freeman', 'freeman@gmail.com', '0987654328', '1937-06-01', 3),
+    (19, 'robbins', 'pass123', 'Tim Robbins', 'robbins@gmail.com', '0987654329', '1958-10-16', 3),
+    -- Admin
+    (20, 'admin', 'pass123', 'Người Phán Xử', 'nguoiphanxu@gmail.com', '0123001230', '2005-05-29', 1),
+    -- USER THƯỜNG
+    (21, 'user01', '123456', 'Nguyễn Tiến Khởi', 'khoinguyen@gmail.com', '0921111222', '1998-09-03', 4),
+    (22, 'user02', '123456', 'Dỗ Trung Kiên', 'kientrung@gmail.com', '0922222333', '2001-06-14', 4),
+    (23, 'user03', '123456', 'Đào Quang Lộc', 'locdao@gmail.com', '0923333444', '2002-02-28', 4),
+    (24, 'user04', '123456', 'Trần Minh Tuấn', 'lele@gmail.com', '0924444555', '1999-12-12', 4),
+    (25, 'user05', '123456', 'Lê Văn Hoàng', 'hello@gmail.com', '0925555666', '2000-03-21', 4),
+    (26, 'user06', '123456', 'Phạm Thị Hồng', 'fefe@gmail.com', '0926666777', '1997-11-11', 4),
+    (27, 'user07', '123456', 'Vũ Đức Anh', 'skibidi@gmail.com', '0927777888', '2001-01-01', 4),
+    (28, 'user08', '123456', 'Ngô Thị Lan', 'idontknow@gmail.com', '0928888999', '1998-08-08', 4),
+    (29, 'user09', '123456', 'Trịnh Văn Long', 'xinchao@gmail.com', '0929999000', '2002-05-05', 4),
+    (30, 'user10', '123456', 'Đặng Thị Mai', 'sigma@gmail.com', '0921010101', '1996-07-07', 4);
 
 # Phim
 INSERT IGNORE INTO phim (id, ten_phim, dao_dien_id, nam_phat_hanh, poster, quoc_gia_id, so_tap, trailer, mo_ta)
