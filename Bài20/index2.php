@@ -39,7 +39,7 @@
     ?>
 
     <div class="container">
-        <form action="index.php?page_layout=updatenguoidung&id=<?php echo $nguoiDung["id"] ?>" method="POST">
+        <form action="index.php?page_layout=updatenguoidung&id=<?php echo $id; ?>" method="POST">
         <div>
             <h1>Cập nhật người dùng</h1>
         </div>
@@ -76,12 +76,9 @@
     </div>
     <?php
     
-    if(!empty($_POST['ten_dang_nhap']) &&
-        !empty($_POST['mat_khau']) &&
-        !empty($_POST['ho_ten']) &&
-        !empty($_POST['email']) &&
-        !empty($_POST['sdt'])&&
-        !empty($_POST['ngay_sinh'])&& 
+    if(!empty($_POST['ten_dang_nhap']) &&!empty($_POST['mat_khau']) &&
+        !empty($_POST['ho_ten']) && !empty($_POST['email']) &&
+        !empty($_POST['sdt']) && !empty($_POST['ngay_sinh'])&& 
         !empty($_POST['vai_tro_id'])){
             
             $tenDangNhap = $_POST['ten_dang_nhap'];
@@ -94,34 +91,24 @@
     
             $sql = "UPDATE nguoi_dung
                     SET ten_dang_nhap = '$tenDangNhap',
-                        mat_khau      = '$matKhau',
-                        ho_ten        = '$hoTen',
-                        email         = '$email',
-                        sdt           = '$sdt',
-                        ngay_sinh     = '$ngaySinh',
-                        vai_tro_id    = $vaiTroId
+                        mat_khau = '$matKhau',
+                        ho_ten = '$hoTen',
+                        email = '$email',
+                        sdt = '$sdt',
+                        ngay_sinh = '$ngaySinh',
+                        vai_tro_id = $vaiTroId
                     WHERE id = $id";
         
 
         if (mysqli_query($connect, $sql)) {
             header('Location: index.php?page_layout=nguoidung');
+            exit;
         } else {
-
-            echo 'Lỗi SQL: ' . mysqli_error($connect);
+            echo '<p class="warning">Lỗi SQL: ' . mysqli_error($connect) . '</p>';
         }
     } else {
-
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            echo "<p class= 'warning'> Vui lòng nhập đầy đủ thông tin ! </p>";
-        }
+        echo "<p class='warning'> Vui lòng nhập đầy đủ thông tin ! </p>";
     }
     ?>
-
-    
-
 </body>
-
-</html><!DOCTYPE html>
-
-
-
+</html>
