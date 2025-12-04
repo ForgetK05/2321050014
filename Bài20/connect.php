@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "quan_ly_web_phim2";
+    $database = "quan_ly_web_phim3";
 
     // tạo kết nối
     $connect = mysqli_connect($servername, $username, $password, $database);

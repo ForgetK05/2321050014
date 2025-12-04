@@ -52,7 +52,6 @@
                 <li><a href="index.php?page_layout=theloai">Thể loại</a></li>
                 <li><a href="index.php?page_layout=quocgia">Quốc gia</a></li>
                 <li><a href="index.php?page_layout=nguoidung">Người dùng</a></li>
-                <li><a href="index.php?page_layout=themnguoidung">Thêm người dùng</a></li>
             </ul>
             <ul>
                 <li><?php echo "Xin chào ". $_SESSION["username"]; ?></li>
@@ -81,8 +80,26 @@
             case 'themnguoidung':
                 include "themnguoidung.php";
                 break;
+            case 'themphim':
+                include "themphim.php";
+                break;
+            case 'themquocgia':
+                include "themquocgia.php";
+                break;
+            case 'themtheloai':
+                include "themtheloai.php";
+                break;
             case 'updatenguoidung':
                 include "updatenguoidung.php";
+                break;
+            case 'updatephim':
+                include "updatephim.php";
+                break;
+            case 'updatequocgia':
+                include "updatequocgia.php";
+                break;
+            case 'updatetheloai':
+                include "updatetheloai.php";
                 break;
             case 'dangxuat':         
                 break;

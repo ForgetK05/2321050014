@@ -32,7 +32,7 @@
 <body>
     <div class="container">
         <form action="index.php?page_layout=themnguoidung" method="POST">
-   
+
         <div>
             <h1>Thêm người dùng</h1>
         </div>
@@ -88,9 +88,9 @@
             $vaiTroId = $_POST['vai_tro_id'];
     
             $sql = "INSERT INTO nguoi_dung
-                (id, ten_dang_nhap, mat_khau, ho_ten, email, sdt, ngay_sinh, vai_tro_id)
+                (ten_dang_nhap, mat_khau, ho_ten, email, sdt, ngay_sinh, vai_tro_id)
             VALUES
-                (31, '$tenDangNhap', '$matKhau', '$hoTen', '$email', '$sdt', '$ngaySinh', '$vaiTroId')";
+                ('$tenDangNhap', '$matKhau', '$hoTen', '$email', '$sdt', '$ngaySinh', '$vaiTroId')";
         
 
         if (mysqli_query($connect, $sql)) {

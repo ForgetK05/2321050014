@@ -44,10 +44,6 @@
     <table>
         <div style="justify-content: space-around; display: flex; text-align: center; width: 100%; align-items: center;">
             <h1>Thông tin người dùng</h1>
-
-            <div>
-                <a class="xoa1" href="xoanguoidung.php">Xoá</a>
-            </div>
             <div>
                 <a class="them" href="themnguoidung.php">Thêm</a>
             </div>
