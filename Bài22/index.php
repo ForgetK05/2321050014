@@ -47,7 +47,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.php?page_layout=trangchu">Trang chủ</a></li>
+                <li><a href="trangchu.php">Trang chủ</a></li>
                 <li><a href="index.php?page_layout=phim">Phim</a></li>
                 <li><a href="index.php?page_layout=theloai">Thể loại</a></li>
                 <li><a href="index.php?page_layout=quocgia">Quốc gia</a></li>

@@ -52,27 +52,45 @@
                         </a>
                     </div>
                 </div>
-                <div class="video">
+                <!-- <div class="video">
                     <video controls>
                         <source src="G:\Download\v10025g50000cnhfhlnog65khj8j1atg.mov" type="video/mov">
                     </video>
-                </div>
+                </div> -->
                 <div>
                     <img class="pic1" width="70%" src="img/qc.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="main2">
+            <?php
+                include("connect.php");
+                $sql = "SELECT * FROM the_loai";
+                $theLoai = mysqli_query($connect, $sql);
+                while ($hang = mysqli_fetch_assoc($theLoai)) {
+            ?>
             <div class="dm1">
-                <p>Mới ra mắt</p>
-                <div class="dm1-1">
+                <p><?php echo $hang['ten_the_loai']; ?></p>
+                <div class="dm1-1"> 
+                    
+                    
+                                    <?php
+                            $sql = "SELECT p.*
+                                    FROM phim p
+                                    JOIN phim_the_loai pl ON pl.phim_id = p.id
+                                    WHERE pl.the_loai_id = {$hang['id']}";
+
+                            $result = mysqli_query($connect, $sql);
+                            while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
                     <div>
                         <a href="#" onclick="chonPhim(1)">
-                            <img class="pic2" src="img/phim/beautyandthebeaets.jpg" alt="">
-                            <div class="font">Người đẹp và quái vật</div>
+                            <img class="pic2" src="<?php echo $row['poster']; ?>" alt="">
+
+                            <div class="font"><?php echo $row['ten_phim']; ?></div>
                         </a>
                     </div>
-                    <div>
+                    <!-- <div>
                         <a href="#" onclick="chonPhim(2)">
                             <img class="pic2" src="img/phim/bongdungtrungso.jpg" alt="">
                             <div class="font">Bỗng dưng trúng số</div>
@@ -101,80 +119,12 @@
                             <img class="pic2" src="img/phim/deptraithaysaisai.jpg" alt="">
                             <div class="font">Đẹp trai thấy sai sai</div>
                         </a>
-                    </div>
+                    </div> --> 
+                    <?php } ?>
+             
                 </div>
             </div>
-            <div class="dm1">
-                <p>Phim hay</p>
-                <div class="dm1-1">
-                    <div>
-                        <a href="#" onclick="chonPhim(7)">
-                            <img class="pic2" src="img/phim/johnwi.jpg" alt="">
-                            <div class="font">John Wick</div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="chonPhim(8)">
-                            <img class="pic2" src="img/phim/keanhon.jpg" alt="">
-                            <div class="font">Kẻ ăn hồn</div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="chonPhim(9)">
-                            <img class="pic2" src="img/phim/kungfupanda.jpg" alt="">
-                            <div class="font">Kung Fu Panda</div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="chonPhim(10)">
-                            <img class="pic2" src="img/phim/mai.jpg" alt="">
-                            <div class="font">Mai</div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="chonPhim(11)">
-                            <img class="pic2" src="img/phim/matbiec.jpg" alt="">
-                            <div class="font">Mắt Biếc</div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" onclick="chonPhim(12)">
-                            <img class="pic2" src="img/phim/minion.jpg" alt="">
-                            <div class="font">Minion</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="dm2">
-                <p>Danh mục</p>
-                <div class="dm2-1">
-                    <div>
-                        <a href="#">
-                            <img class="pic3" src="img/truyen-hinh.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img class="pic3" src="img/truc-tiep.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img class="pic3" src="img/thieu-nhi.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img class="pic3" src="img/the-thao.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img class="pic3" src="img/phim-le.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
 
 
